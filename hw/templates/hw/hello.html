@@ -1,0 +1,216 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+ 
+a {
+    float: right;
+    text-decoration: none;
+    font:22px/36px Georgia, Garamond, Serif;
+    color: white;
+    background-color: black;
+    /* padding: 0.2em 0.6em;
+    border-right: 1px solid white; */
+}
+b {
+    float:left;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font:22px/36px Georgia, Garamond, Serif;
+    background-color: black;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+
+a:hover {
+text-decoration: none;
+    color: yellow;
+    background-color: gray;
+}
+.width-boundary { 
+	min-width: 400px; 
+	max-width: 960px; 
+	min-height:1580px;
+	max-height:2000px;
+	margin: 0 auto; 
+	border-style: solid;
+    border-width: 5px;
+}
+.topleft
+{
+	float:left;
+	height:320px;
+	width:320px;
+	margin:0px;
+	border:2px;
+}
+.topleft:hover {
+	-webkit-filter: grayscale(1);
+}
+.topright
+{
+	float:left;
+	height:420px;
+	width:478px;
+	border:2px;
+}
+	
+.div2
+{
+float:left;
+width:50%;
+height:420px;
+width:478px;
+border:1px solid;
+font:16px/26px Georgia, Garamond, Serif;
+overflow:scroll;
+text-decoration: none;
+color: white;
+background-color:#000000;
+}
+.div3
+{
+float:right;
+width:50%;
+height:420px;
+width:478px;
+border:1px solid;
+}
+
+.div4
+{
+float:left;
+width:50%;
+height:420px;
+width:473px;
+}
+.div5
+{
+float:right;
+width:50%;
+height:420px;
+width:473px;
+border:1px solid;
+}
+.gray
+{
+filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+li {
+    display: inline;
+}
+
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+
+</style>
+</head>
+<body background="bg.jpg">
+<div class="width-boundary">
+
+<ul>
+<li><a href="http://gunjanpatel.me/">&nbsp;&nbsp;&nbsp;Subscribe&nbsp;</a></li>
+<li><a href="http://gunjanpatel.me/">&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;</a></li>
+<li><a href="http://gunjanpatel.me/">&nbsp;&nbsp;&nbsp;Portfolio&nbsp;&nbsp;&nbsp;</a></li>
+<li><a href="http://gunjanpatel.me/">&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;</a></li>
+<li><a href="http://gunjanpatel.me/">&nbsp;Home&nbsp;&nbsp;</a></li>
+<li style="text-indent: 15.9em;"><b>Game of Chicago </b> </li>
+</ul>
+
+<div class="div2">
+<b>  ****** Chicago <3 <3 ******(scroll down)</b> <br> <br> <br>
+Beginning in the early 1880s, architectural pioneers of the Chicago School explored steel-frame construction and, in the 1890s, the use of large areas of plate glass. These were among the first modern skyscrapers. William LeBaron Jenney's Home Insurance Building was completed in 1885 and is considered to be the first to use steel in its structural frame instead of cast iron, but this building was still clad in heavy brick and stone. However, the Montauk Building,[2] designed by John Wellborn Root Sr. and Daniel Burnham, was built in 1882–1883 using structural steel. Daniel Burnham and his partners, John Welborn Root and Charles Atwood, designed technically advanced steel frames with glass and terra cotta skins in the mid-1890s, in particular the Reliance Building;[3] these were made possible by professional engineers, in particular E. C. Shankland, and modern contractors, in particular George A. Fuller.
+
+Louis Sullivan was perhaps the city's most philosophical architect. Realizing that the skyscraper represented a new form of architecture, he discarded historical precedent and designed buildings that emphasized their vertical nature. This new form of architecture, by Jenney, Burnham, Sullivan, and others, became known as the "Commercial Style," but it was called the "Chicago School" by later historians.
+
+In 1892, the Masonic Temple surpassed the New York World Building, breaking its two-year reign as the tallest skyscraper, only to be surpassed itself two years later by another New York building.
+
+Since 1963, a "Second Chicago School" emerged from the work of Ludwig Mies van der Rohe at the Illinois Institute of Technology in Chicago. The ideas of structural engineer Fazlur Khan were also influential in this movement,[4] in particular his introduction of a new structural system of framed tubes in skyscraper design and construction. The first building to apply the tube-frame construction was the DeWitt-Chestnut Apartment Building which Khan designed and was completed in Chicago by 1966.[5] This laid the foundations for the tube structures of many other later skyscrapers, including his own constructions of the John Hancock Center[6] and Willis Tower (then named the Sears Tower)[7] in Chicago and can been seen in the construction of the World Trade Center, Petronas Towers, Jin Mao Building, and most other supertall skyscrapers since the 1960s.[8] Willis Tower would be the world's tallest building from its construction in 1974 until 1998 (when the Petronas Towers was built) and would remain the tallest for some categories of buildings until the Burj Khalifa was completed in early 2010.
+</div>
+<div class="div3">
+<img class="topright" src="{% static '0.jpg' %}" /> 
+</div>
+
+<div>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '3.jpg' %}" /></a>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '4.jpg' %}" /></a>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '5.jpg' %}" /></a> <br>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '9.jpg' %}" /></a>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '2.jpg' %}" /></a>
+<a href="http://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Chicago"><img class="topleft" src="{% static '8.jpg' %}" /></a> <br> <br>
+</div>
+<div class="div4">
+<table id="t01">
+  <tr>
+    <th>Rank</th>
+    <th>Name</th>		
+    <th>Floors</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Willis Tower</td>		
+    <td><strong><font color="red">108</font></strong></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Trump Hotel</td>		
+    <td><strong><font color="orange">98</font></strong></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Aon Center</td>		
+    <td><strong><font color="orange">83</font></strong></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>John Hancock Center</td>		
+    <td><strong><font color="red">100</font></strong></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Franklin Center</td>		
+    <td><strong><font color="green">61</font></strong></td>
+  </tr>
+</table>
+</div>
+
+<div class="div5">
+<img class="topright" src="{% static 'tweet.jpg' %}" /> 
+</div>
+
+</div>
+
+</body>
+</html>
