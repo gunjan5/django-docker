@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^myadmin/', include(admin.site.urls)),
     url(r'^html/', 'hw.views.home'),
     url(r'^fancy/', 'hw.views.hello'),
+    url(r'$', 'hw.views.hello'),
 ]
