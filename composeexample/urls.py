@@ -18,7 +18,9 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^myadmin/', include(admin.site.urls)),
+    url(r'^myadmin', include(admin.site.urls)),
     url(r'^html/', 'hw.views.home'),
     url(r'^fancy/', 'hw.views.hello'),
+    url(r'^signup/', 'signups.views.signup_hello'),
     url(r'$', 'hw.views.hello'),
 ]
